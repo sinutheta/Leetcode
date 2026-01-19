@@ -7,9 +7,12 @@ bool checkRecord(char *s) {
     for (int i = 0; i < len; i++) {
         if (s[i] == 'A') {
             a++;
-        } else if (s[i] == 'L') {
+            l = 0;
+        } 
+        else if (s[i] == 'L') {
             l++;
-        } else {
+        } 
+        else {
             l = 0;
         }
         if (a > 1 || l > 2) {
